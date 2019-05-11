@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="mainDiv">
+            <div class="title1">
+                <label>Chord Visualization</label>
+                <br>
+            </div>
+            <div class="inputVal">
+                <div class="row">
+                    <div class="horVal">
+                        <div class="mainF">
+                            <label>Select number of table entries : </label>
+                            <select id="tblVal">
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="findVal">
+                        <form id="lookup_content" class="form-control">
+                            <label>Start Position</label>
+                            <input type="number" id="startNode">
+
+                            <label>Lookup Value</label>
+                            <input type="number" id="lookupNode">
+
+                            <button type="submit">Find</button>
+                        </form>
+                    </div>
+                    <div id="nodesUsed"></div>
+                </div>
+                <div id="designHelper" class="chord-dht">
+                    <div id="tt">
+                        <div class="table"></div>
+                    </div>
+
+                    <svg id="hashTable" height="600" width="600"></svg>
+                    <script src="eventHandlers.js"></script>
+                    <script src="findTable.js"></script>
+                    <script src="functionChord.js"></script>
+                    <script src="successor.js"></script>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
